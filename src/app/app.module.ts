@@ -2,17 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import { AppComponent } from './app.component';
+import {InventoryAppComponent} from './app.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    InventoryAppComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InventoryAppComponent]
 })
 export class AppModule { }

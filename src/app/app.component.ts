@@ -1,5 +1,12 @@
-import {Component} from '@angular/core';
+import {
+  Component,
+  EventEmitter
+} from '@angular/core';
 import {Product} from './product.model';
+
+/**
+ * @InventoryApp: the top-level component for the application
+ */
 
 @Component({
   selector: 'app-root',
@@ -33,5 +40,9 @@ export class InventoryAppComponent {
         29.99
       )
     ];
+  }
+
+  productWasSelected(product: Product): void {
+    console.log('Product clicked: ', product);
   }
 }
